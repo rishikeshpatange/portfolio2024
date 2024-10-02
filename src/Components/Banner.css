@@ -1,0 +1,60 @@
+.banner {
+  height: 100%;
+  text-align: center;
+  /* height: 70vh; */
+}
+
+.banner_animation_container {
+  margin-top: 13%;
+  line-height: 130%;
+}
+
+.banner h1 {
+  font-weight: 700;
+  font-size: max(8.68vw, 34px);
+  color: var(--text-color);
+  
+}
+
+.banner h5 {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: -10px;
+  color: var(--accent-color);
+}
+
+.banner_img_container {
+  margin-top: 9%;
+}
+
+.banner_img_container p {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  height: 400px;
+  width: 300px;
+}
+
+/* Add this to Banner.css */
+
+.banner h1 {
+  cursor: pointer;
+  transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.banner h1:hover {
+  letter-spacing: 2px; /* Expands letter spacing on hover */
+ 
+}
+
+
+/* .banner img {
+  border: 2px solid var(--accent-color);
+} */
+

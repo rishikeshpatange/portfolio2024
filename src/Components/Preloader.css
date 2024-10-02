@@ -1,0 +1,74 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #1C1D21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  font-size: 10vw;  /* Takes most of the screen width */
+  font-weight: 800;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInOut 1s ease forwards;  /* Reduced animation duration to 1s */
+}
+
+.text:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.text:nth-child(2) {
+  animation-delay: 1s;  /* Shortened delay */
+}
+
+.text:nth-child(3) {
+  animation-delay: 2s;  /* Shortened delay */
+}
+
+/* Fade-in, then fade-out with upward movement */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .text {
+    font-size: 20vw;
+  }
+}

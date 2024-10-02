@@ -1,0 +1,251 @@
+/* .fotter {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #1C1D21;
+  flex-direction: column;
+  box-sizing: border-box; 
+  overflow: hidden; 
+}
+.footer-buttons_container{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box; 
+  flex-direction: column;
+  padding: 50px;
+
+}
+
+.fotter_marquee {
+  display: flex;
+  flex-direction: row;
+}
+
+.fotter_marquee h1 {
+  font-size: 8rem;
+  color: white;
+  margin-right: 20px;
+  white-space: nowrap; 
+}
+
+.fotter_marquee img {
+  margin-left: 20px;
+}
+
+.fotter_line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  margin: 20px 0; 
+}
+
+.footer-buttons {
+  display: flex; 
+  margin-bottom: 20px; 
+  width: 100%; 
+}
+
+.footer-buttons button {
+  position: relative;
+  padding: 15px 25px;
+  margin: 0 10px; 
+  border: 2px solid rgb(80, 80, 80);
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.footer-buttons button a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1; 
+}
+
+.footer-buttons button::before {
+  content: '';
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #455CE9; 
+  transition: top 0.4s ease;
+  z-index: 0;
+}
+
+.footer-buttons button:hover::before {
+  top: 0; 
+}
+
+.footer-buttons button:not(:hover)::before {
+  top: 100%; 
+}
+
+.fotter_social {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.fotter_social p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(156, 156, 156);
+  margin-bottom: 10px;
+}
+
+.version h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.social_media_container a {
+  margin-right: 20px;
+  color: white;
+} */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100vh; 
+  background-color: #1C1D21;
+  box-sizing: border-box; 
+  overflow: hidden; 
+  
+  
+}
+
+
+.footer-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-buttons {
+  margin-top: 50px;
+  margin-left: 90px;
+}
+
+.footer-buttons .btn {
+  background-color: #555;
+  color: rgb(212, 18, 18);
+  padding: 30px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.footer-buttons .btn:hover {
+  background-color: #777;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 30px 100px 50px 100px;
+}
+
+.footer-version {
+  text-align: left;
+}
+.footer-version p{
+  color: white;
+}
+
+.footer-socials a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #aaa;
+}
+
+
+.fotter_marquee{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fotter_marquee h1 {
+  font-size: 8rem;
+  color: white;
+  margin-right: 20px;
+  white-space: nowrap; 
+}
+
+.fotter_marquee img {
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.footer-buttons {
+  display: flex; 
+  margin-bottom: 20px; 
+  width: 100%; 
+}
+
+.footer-buttons button {
+  position: relative;
+  padding: 15px 25px;
+  margin: 0 10px; 
+  border: 2px solid rgb(80, 80, 80);
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.footer-buttons button a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1; 
+}
+
+.footer-buttons button::before {
+  content: '';
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #455CE9; 
+  transition: top 0.4s ease;
+  z-index: 0;
+}
+
+.footer-buttons button:hover::before {
+  top: 0; 
+}
+
+.footer-buttons button:not(:hover)::before {
+  top: 100%; 
+}
+
+
+.fotter_line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  margin: 20px 0; 
+}

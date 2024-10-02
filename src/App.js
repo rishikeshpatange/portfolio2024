@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './Header';
+import Home from './Home';
+import Preloader from './Components/Preloader';
+import Fotter from './Components/Fotter';
 
 function App() {
+
+
+  const [theme, setTheme] = useState('light'); // Default theme is light
+  const toggleTheme = () => {
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : prevTheme === 'dark' ? 'blue': 'light'));
+  };
+
+  console.log('Theme in Header:', theme); // Before passing to Home
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${theme}`}>
+      <Header theme={theme} toggleTheme={toggleTheme}/>
+      <Preloader/>
+      <Home theme={theme}/>
+      <Fotter/>
+
     </div>
   );
 }

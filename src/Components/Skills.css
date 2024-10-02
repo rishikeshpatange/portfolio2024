@@ -1,0 +1,30 @@
+/* Skill.css */
+.skill-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-container img{
+  height: 300px;
+  width: 300px;
+  margin-top: -101px;
+
+}
+.hello-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vw; /* Responsive font size based on viewport width */
+  font-weight: bold;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  line-height: 1; /* Tighter line height */
+  z-index: 1; /* Ensure text is below the image */
+}
+
+.hello-letter {
+  margin: -0.05vw; /* Minimal spacing between letters */
+}
+

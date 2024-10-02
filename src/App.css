@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Light Theme */
+.app.light {
+  --bg-color: #4C6EE2;
+  --text-color: white;
+  --accent-color: white;
+  --secondary-text-color: #282830;
+  --project-color:#282830;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dark Theme */
+.app.dark {
+  --bg-color: #504C26;
+  --text-color: #EBFF00;
+  --accent-color: #EBFF00;
+  --secondary-text-color: #282830;
+  --project-color:#282830;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Blue Theme */
+.app.blue {
+  --bg-color: #B9282F;
+  --text-color: #EDD0C2;
+  --secondary-text-color: #EDD0C2;
+  --accent-color: #EDD0C2;
+  --project-color:#282830;
 }
 
-.App-link {
-  color: #61dafb;
+/* Global Styles (applies to all themes using variables) */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header, .Home {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1, h5 {
+  color: var(--text-color);
+}
+
+p, .banner_img_container p {
+  color: var(--secondary-text-color);
 }

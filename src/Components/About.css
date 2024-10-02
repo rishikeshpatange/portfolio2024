@@ -1,0 +1,29 @@
+.about{
+  margin-top: 10px;
+  height: 100%;
+  padding: 8vh 12.5% 13vh 8.33%;
+}
+
+.about_text_container{
+  text-align: center;
+}
+.about_text_container h1{
+  font-size: 3.1rem;
+}
+.about_text_container h3 {
+  font-size: 1.1rem;
+  font-weight: 450;
+  line-height: 30px;
+  color: var(--text-color);
+  max-width: 800px;
+  
+}
+
+
+.underline {
+  color: var(--accent-color);
+  font-weight: 600;
+
+}
+
+
